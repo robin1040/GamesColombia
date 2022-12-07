@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Robinson Ramirez">
+    <meta name="description" content="Pagina para descarga de juegos de diferentes plataformas por utorrent" />
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/game-controller-svgrepo-com.svg">
+    <link rel="stylesheet" href="./src/css/styles.css" type="text/css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>GamesColombia</title>
+</head>
+<body>
+    <!-- Inicio nav -->
+        <nav class="navbar navbar-expand-lg color-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img
+                        src="https://cdn.pixabay.com/photo/2020/07/28/22/06/remote-control-5446426_960_720.png"
+                        alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#juegos">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#consoles">Consolas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#plataformas" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plataformas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="item-dropdown" href="#pc">PC</a></li>
+                                <li><a class="item-dropdown" href="#xbox">Xbox</a></li>
+                                <li><a class="item-dropdown" href="#play">Play</a></li>
+                                <li><a class="item-dropdown" href="#nintendo">Nintendo Switch</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contactanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar Juegos..."
+                            aria-label="Search">
+                        <button class="btn-search" type="submit">Buscar</button>
+                    </form>
+                    <li class="nav-item">
+                        <button type="button"><span class="material-symbols-outlined">
+                            person
+                        </span></button>
+                    </li>   
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del nav -->
+    <header id="hero-header">
+        <div id="description">
+            <h1>Bienvenidos a GamesColombia</h1>
+            <p>¿Te gustan los juegos con una buena historia? Secuelas, precuelas, trilogías, entre muchos otros juegos y colecciones para tener y jugar en difeentes plataformas. En esta sección podrás ver,comprar las mejores sagas y colecciones disponibles en GAMESCOLOMBIA!</p>
+            <button class="btn btn-primary" type="submit">Registrate</button>
+        </div>
+        <video muted autoplay loop>
+            <source src="./src/img/pexels-alena-darmel-8128345.mp4" type="video/mp4">
+        </video>
+<!--         <div class="kratos">
+            <img src="./src/img/kratos.jpg" alt="Kratos god of war">
+        </div>
+        <div class="gerald">
+            <img src="./src/img/gerald.jpg" alt="Gerald of Rivia the witcher">
+        </div> -->
+        <div class="fondo"></div>
+    </header>
+    <main class="container-main">
+        <h2 class="title-games">Juegos</h2>
+        <p class="text-games">Juegos disponibles en <span>GAMESCOLOMBIA.</span></p>
+        <section id="juegos">
+            <div class="games-items">
+                <h2>Juegos PC mejor valorados</h2>
+                <div class="image-game">
+                    <img src="./src/img/A-Plague-Tale-Requiem.jpg" alt="Plague-Tale-Requiem" id="image-game-pc">
+                    <h3>A Plague Tale Requiem</h3>
+                    <p id="price-game-pc" class="games-price">$ 190.990</p>
+                    <button class="btn btn-primary">Comprar</button>
+                    <div class="arrow-left arrow">
+                        <img src="./src/img/izquierda.svg" alt="flecha izquierda azul" id="arrow-left-pc">
+                    </div>
+                    <div class="arrow-right arrow">
+                        <img src="./src/img/derecha.svg" alt="flecha derecha azul" id="arrow-right-pc" onclick="miFuncion()">
+                    </div>
+                </div>
+            </div>
+            <div class="games-items">
+                <h2>Juegos XBOX mejor valorados</h2>
+                <div class="image-game">
+                    <img src="./src/img/cover.forza-horizon.jpg" alt="Plague-Tale-Requiem" id="image-game-pc">
+                    <h3>A Plague Tale Requiem</h3>
+                    <p id="price-game-pc" class="games-price">$ 190.990</p>
+                    <button class="btn btn-primary">Comprar</button>
+                    <div class="arrow-left arrow">
+                        <img src="./src/img/izquierda.svg" alt="flecha izquierda azul" id="arrow-left-pc">
+                    </div>
+                    <div class="arrow-right arrow">
+                        <img src="./src/img/derecha.svg" alt="flecha derecha azul" id="arrow-right-pc" onclick="miFuncion()">
+                    </div>
+                </div>
+            </div>
+            <div class="games-items">
+                <h2>Juegos PLAY STATION mejor valorados</h2>
+                <div class="image-game">
+                    <img src="./src/img/god_of_war_ragnarok-5732812.jpg "alt="Plague-Tale-Requiem" id="image-game-pc">
+                    <h3>A Plague Tale Requiem</h3>
+                    <p id="price-game-pc" class="games-price">$ 190.990</p>
+                    <button class="btn btn-primary">Comprar</button>
+                    <div class="arrow-left arrow">
+                        <img src="./src/img/izquierda.svg" alt="flecha izquierda azul" id="arrow-left-pc">
+                    </div>
+                    <div class="arrow-right arrow">
+                        <img src="./src/img/derecha.svg" alt="flecha derecha azul" id="arrow-right-pc" onclick="miFuncion()">
+                    </div>
+                </div>
+            </div>
+            <div class="games-items botton-games">
+                <h2>Juegos NINTENDO SWITCH mejor valorados</h2>
+                <div class="image-game">
+                    <img src="./src/img/leyendas-pokemon-arceus-202152616392725_1.jpg "alt="Plague-Tale-Requiem" id="image-game-pc">
+                    <h3>A Plague Tale Requiem</h3>
+                    <p id="price-game-pc" class="games-price">$ 190.990</p>
+                    <button class="btn btn-primary">Comprar</button>
+                    <div class="arrow-left arrow">
+                        <img src="./src/img/izquierda.svg" alt="flecha izquierda azul" id="arrow-left-pc">
+                    </div>
+                    <div class="arrow-right arrow">
+                        <img src="./src/img/derecha.svg" alt="flecha derecha azul" id="arrow-right-pc" onclick="miFuncion()">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="consoles">
+            <h2>Consolas</h2>
+            <div class="container-consoles">
+                <div class="more-consoles">
+                    <div class="image-console">
+                        <img src="./src/img/consoles/xboxseriesS.jpg" alt="xbox series s">
+                    </div>
+                    <div class="image-console">
+                        <img src="./src/img/consoles/15845893-1200-auto (1).jpg" alt="xbox series x">
+                    </div>
+                    <div class="image-console">
+                        <img src="./src/img/consoles/xboxone.jpg" alt="xbox one s">
+                    </div>
+                </div>
+                <div class="image-console-ppal">
+                    <img src="./src/img/consoles/xboxone.jpg" alt="xbox-one">
+                </div>
+                <div class="description-console">
+                    <h3>XBOX ONE S</h3>
+                    <P>$ 900.000</P>
+                    <p>El nuevo modelo de Xbox One S es una consola mas pequeña y portatil la cual viene con una fuente de alimentación interna, soporte para 4K Ultra HD para películas Blu-ray y soporte High Dynamic Range (HDR).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./src/js/index.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

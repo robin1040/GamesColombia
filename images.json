@@ -1,0 +1,22 @@
+{
+    "gamespc":[
+        {
+            "name":"A Plague Tale Requiem",
+            "description":"En A Plague Tale Requiem al otro lado del mar, una isla llama… Embárcate en una aventura desgarradora en un mundo maravilloso y brutal retorcido por fuerzas sobrenaturales.",
+            "price":"100000",
+            "url":"./src/img/A-Plague-Tale-Requiem-193x288.jpg"
+        },
+        {
+            "name":"Marvels SpiderMan Miles",
+            "description":"Luego de los eventos de Marvel's Spider-Man Remasterizado, el adolescente Miles Morales intenta adaptarse a la vida en su nuevo hogar intentando seguir los pasos de su mentor, Peter Parker, como el nuevo Spider-Man.",
+            "price":"170000",
+            "url":"./src/img/Marvels-SpiderMan-Miles-Morales-193x288.jpg"
+        },
+        {
+            "name":"Uncharted 4 Legacy of Thieves Collection",
+            "description":"En Uncharted 4 Legacy of Thieves Collection busca tu fortuna y deja tu marca en el mapa en UNCHARTED: Colección Legado de ladrones. ",
+            "price":"270000",
+            "url":"./src/img/Uncharted-4-Legacy-of-Thieves-Collection-193x288.jpg"
+        }
+    ]
+}

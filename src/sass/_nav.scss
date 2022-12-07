@@ -1,0 +1,137 @@
+@import "_variables.scss";
+
+header{
+    font-family: $font-other;
+    font-size: 18px;
+}
+nav{
+    position: fixed;
+}
+.navbar-brand img {
+    width: 55px;
+    height: 32px;
+  }
+
+.color-blue{
+    background-color: $color-second;
+}
+
+.dropdown-menu{
+    background-color: $color-three;
+}
+
+.navbar-nav{
+    li{
+        a{
+            color: $color-white;
+            font-weight: 700;
+        }
+        a:hover{
+            color: $color-three;
+        }
+    }
+}
+.dropdown {
+    ul{
+        width: 30vw;
+        background: linear-gradient(45deg, $color-primary, $color-three);
+    }
+    
+}
+
+.dropdown-menu{
+    li{
+        padding: 5px;
+        text-align: justify;
+        
+        a{
+            text-decoration: none;
+        }
+    }
+    li:hover{
+        background-color: #0ffff8
+    }
+}
+
+/* .btn-search{
+    border: 1px solid #000;
+    border-radius: 12px;
+    width: 150px;
+    background-color: #0e4467;
+    color: $color-white;
+    margin-right: 10px;
+}
+.btn-search:hover{
+    background-color: $color-three;
+    color: #000;
+    box-shadow: 1px 1px 1px 1px #0ffff8;
+}
+ */
+ .btn-search{
+     position: relative;
+     display: block;
+     border-radius: 6px;
+     text-align: center;
+     font-weight: bold;
+     width: 150px;
+     overflow: hidden;
+     color:$color-white;
+     cursor: pointer;
+     letter-spacing: 2px;
+     box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+     text-decoration: none;
+     transition: all ease 0.5s;
+     background:$color-second;
+ }
+.btn-search:after,.btn-search:before{
+     width: 80px;
+     height: 200px;
+     content: '';
+     display: block;
+     background: rgba(255, 255, 255, 0.529);
+     transform: rotate(45deg);
+     top: -60px;
+     position: absolute;
+     transition: none;
+     right:-45%;
+     cursor: pointer;
+ }
+  
+ .btn-search:before{
+     left: -48%;
+ }
+  
+ .btn-search:hover{
+     text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+     background:$color-three;
+ }
+  
+ .btn-search:hover:after,
+ .btn-search:hover:before{
+     transform: rotate(45deg), scaleX(130%);
+     background: rgba(255,255,255,0.1);
+     transition: all ease 0.5s;
+ }
+  
+ .btn-search:hover:after{
+     right: 130%;
+ }
+  
+ .btn-search:hover:before{
+     left: 130%;
+ }
+
+.nav-item {
+    list-style: none;
+    margin-right: 20px;
+    button{
+        background-color: $color-second;
+        border: none;
+        width: 30px;
+        height: 100%;
+        span{
+           font-size: 40px;
+           color: $color-white;
+        }
+    }
+}

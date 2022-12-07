@@ -1,0 +1,54 @@
+@import "_variables.scss";
+
+#consoles{
+    background: linear-gradient(45deg,$color-primary,$color-second);
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        color:$color-white;
+        font-weight: 700;
+    }
+}
+
+.container-consoles{
+    display: flex;
+    width: 90vw;
+    gap: 10px;
+    
+}
+.more-consoles{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img{
+        width: 90%;
+        height: 6vh;
+        border-radius: 20px;
+    }
+}
+.image-console-ppal{
+    width: 50%;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+}
+.description-console{
+    width: 30%;
+    border: 2px solid black;
+    h3{
+        font-size: 16px;
+        color: $color-white;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
