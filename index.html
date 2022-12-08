@@ -79,7 +79,6 @@
         <video muted autoplay loop>
             <source src="./src/img/pexels-alena-darmel-8128345.mp4" type="video/mp4">
         </video>
-        <button class="btn btn-primary" type="submit">Registrate</button>
     </header>
     <main class="container-main">
         <h2 class="title-games">Juegos</h2>
@@ -153,7 +152,9 @@
         </section>
         <section id="consoles">
             <h2>Consolas</h2>
-            <div class="card" style="width: 18rem;">
+            <div class="container-consoles">
+
+            <div class="card">
                 <img src="./src/img/consoles/15845893-1200-auto (1).jpg" class="card-img-top" alt="xbox-series-x">
                 <div class="card-body">
                   <h5 class="card-title">Xbox series X</h5>
@@ -161,7 +162,7 @@
                   <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
+              <div class="card">
                 <img src="./src/img/consoles/xboxseriesS.jpg" class="card-img-top" alt="xbox-series-s">
                 <div class="card-body">
                   <h5 class="card-title">Xbox series S</h5>
@@ -169,34 +170,53 @@
                   <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
+              <div class="card">
+                <img src="./src/img/consoles/xboxone.jpg" class="card-img-top" alt="xbox-series-s">
+                <div class="card-body">
+                  <h5 class="card-title">Xbox One S</h5>
+                  <p class="card-text">$900.000</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+              <div class="card">
                 <img src="./src/img/consoles/play5.jpg" class="card-img-top" alt="play station 5">
                 <div class="card-body">
-                  <h5 class="card-title">Xbox series S</h5>
+                  <h5 class="card-title">Play Station 5</h5>
                   <p class="card-text">$3.200.000</p>
                   <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
+              <div class="card">
+                <img src="./src/img/consoles/6738513-1200-auto.webp" class="card-img-top" alt="play station 5">
+                <div class="card-body">
+                  <h5 class="card-title">Play Station 4</h5>
+                  <p class="card-text">$1.400.000</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+              <div class="card">
                 <img src="./src/img/consoles/nintendo.jpg" class="card-img-top" alt="nintendo">
                 <div class="card-body">
-                  <h5 class="card-title">Xbox series S</h5>
+                  <h5 class="card-title">Nintendo Swicth</h5>
                   <p class="card-text">$1.500.000</p>
                   <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
+            </div>
         </section>
         <footer id="contacto">
-            <form class="form-register">
-                <h4>Contactanos</h4>
-                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
-                <input class="controls" type="number" name="tel" id="tel-number" placeholder="Ingrese su numero de telefono">
-                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
-                <textarea name="texto" id="text-tarea" class="controls" cols="30" rows="10" placeholder="Escribe tu mensaje y pronto nos comunicaremos contigo..."></textarea>
-                <input class="buttons" type="submit" value="Enviar solicitud">
-            </form>
+            <div class="form-container">
+                <form class="form-contacto">
+                    <h4>Contactanos</h4>
+                    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+                    <input class="controls" type="number" name="tel" id="tel-number" placeholder="Ingrese su numero de telefono">
+                    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+                    <textarea name="texto" id="text-tarea" class="controls" cols="30" rows="10" placeholder="Escribe tu mensaje y pronto nos comunicaremos contigo..."></textarea>
+                    <input class="buttons" type="submit" value="Enviar solicitud">
+                </form>
+            </div>
             <div class="logos-contacto">
-                <h5>Siguenos tambien en:</h5>
+                <h5>Siguenos en :</h5>
                 <ul>
                     <li><a href="#"><img src="./src/img/iconos redes/icons8-facebook.svg" alt="facebook"></a></li>
                     <li><a href="#"><img src="./src/img/iconos redes/icons8-twitter.svg" alt="twiter"></li>
@@ -204,12 +224,12 @@
                     <li><a href="#"><img src="./src/img/iconos redes/icons8-whatsapp.svg" alt="whatsapp"></li>
                     <li><a href="#"><img src="./src/img/iconos redes/icons8-aplicación-telegrama.svg" alt="telegram"></li>  
                 </ul>
-                <div class="copy">
-                    <a href="https://github.com/robin1040/GamesColombia"><img src="./src/img/iconos redes/icons8-github.svg" alt="github"></a>
-                    <p>Created by <span> &#169 Robinson Ramirez</span></p>
-                </div>
             </div>
         </footer>
+        <div class="copy">
+            <a href="https://github.com/robin1040/GamesColombia"><img src="./src/img/iconos redes/icons8-github.svg" alt="github"></a>
+            <p>Created by <span> &#169 Robinson Ramirez</span></p>
+        </div>
     </main>
     <script type="module" src="./src/js/index.js"></script>
     <!-- JavaScript Bundle with Popper -->

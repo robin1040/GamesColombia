@@ -3,10 +3,11 @@
 #contacto{
     background: linear-gradient(45deg,$color-three,$color-second);
     padding-top: 50px;
+    padding-bottom: 30px;
 }
 
-.form-register {
-    width: 90%;
+.form-contacto {
+    width: 80%;
     background: $color-primary;
     padding: 30px;
     margin: auto;
@@ -66,21 +67,55 @@
             display: inline;
         }
     }
-    .copy{
+
+  }
+
+  .copy{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background: linear-gradient(45deg,$color-three,$color-second);
+    a{
+        padding-right: 10px;
+        img{
+            width: 30px;
+        }
+    }
+    p{
+        color: $color-white;
+        span{
+            color: $color-second;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (min-width:900px) {
+    #contacto{
         display: flex;
-        justify-content: center;
-        a{
-            padding-right: 10px;
-            img{
-                width: 30px;
+        width: 100vw;
+        padding-left: 50px;
+        .form-container{
+            width: 70%;
+        }
+        .form-register{
+            width: 80%;
+        }
+        .logos-contacto{
+            width: 20%;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                li{
+                padding-top: 30px; 
+                }
+            }
+            h5{
+                width: 100%;
+                font-size: 20px;
             }
         }
-        p{
-            color: $color-white;
-            span{
-                color: $color-second;
-                font-weight: 700;
-            }
-        };
+        
+
     }
-  }
+}

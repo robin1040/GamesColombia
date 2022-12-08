@@ -2,19 +2,48 @@
 
 #consoles{
     background: linear-gradient(45deg,$color-primary,$color-second);
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-    gap: 20px;
     h2{
         text-align: center;
         padding-bottom: 50px;
         padding-top: 50px;
         color:$color-white;
         font-weight: 700;
-    }
 
+    }
 }
 
+.container-consoles{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 20px;
+    .card{
+        box-shadow: 10px 10px 10px #000;
+        width: 22rem;
+    }
+}
+
+@media (min-width:820px){
+    .container-consoles{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        .card{
+            box-shadow: 15px 15px 15px #000;
+            width: 20rem;
+        }
+    }
+}
+@media (min-width:1220px){
+    .container-consoles{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        .card{
+            box-shadow: 15px 15px 15px #000;
+            width: 18rem;
+        }
+    }
+}

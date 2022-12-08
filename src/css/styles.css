@@ -144,6 +144,7 @@ nav {
   grid-row: 1/9;
   grid-column: 1/9;
   width: 100%;
+  opacity: 0.8;
 }
 #hero-header #description {
   grid-column: 1/7;
@@ -161,28 +162,13 @@ nav {
   width: 400px;
   padding-left: 20px;
 }
-#hero-header button {
-  grid-column: 1/7;
-  grid-row: 6/6;
-  margin: 0 auto;
-}
 
-@media (min-width: 770px) {
-  #description {
-    grid-column: 3/7;
-    grid-row: 3/5;
-    z-index: 20;
-    justify-content: center;
-    color: #fff;
+@media (min-width: 860px) {
+  #hero-header #description h1 {
+    font-size: 2.5rem;
   }
-  #description h1 {
-    font-size: 2rem;
-    padding-left: 20px;
-  }
-  #description p {
-    font-size: 0.8rem;
-    width: 400px;
-    padding-left: 20px;
+  #hero-header #description p {
+    font-size: 1.1rem;
   }
 }
 /* Estilos para la seccion de juegos */
@@ -227,8 +213,7 @@ main .text-games span {
   margin-top: 30px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, auto);
-  width: 100%;
-  width: 260px;
+  width: 250px;
   border-radius: 12px;
   box-shadow: 6px 6px 6px #097fb1;
   text-align: center;
@@ -280,14 +265,17 @@ main .text-games span {
   padding-bottom: 70px;
 }
 
+@media (min-width: 820px) {
+  #juegos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-game {
+    width: 350px;
+  }
+}
 #consoles {
   background: linear-gradient(45deg, #131929, #097fb1);
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 50px;
-  gap: 20px;
 }
 #consoles h2 {
   text-align: center;
@@ -297,13 +285,49 @@ main .text-games span {
   font-weight: 700;
 }
 
+.container-consoles {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  gap: 20px;
+}
+.container-consoles .card {
+  box-shadow: 10px 10px 10px #000;
+  width: 22rem;
+}
+
+@media (min-width: 820px) {
+  .container-consoles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .container-consoles .card {
+    box-shadow: 15px 15px 15px #000;
+    width: 20rem;
+  }
+}
+@media (min-width: 1220px) {
+  .container-consoles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .container-consoles .card {
+    box-shadow: 15px 15px 15px #000;
+    width: 18rem;
+  }
+}
 #contacto {
   background: linear-gradient(45deg, #07c5ff, #097fb1);
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 
-.form-register {
-  width: 90%;
+.form-contacto {
+  width: 80%;
   background: #131929;
   padding: 30px;
   margin: auto;
@@ -311,11 +335,11 @@ main .text-games span {
   color: white;
   box-shadow: 7px 13px 37px #000;
 }
-.form-register h4 {
+.form-contacto h4 {
   font-size: 22px;
   margin-bottom: 20px;
 }
-.form-register .controls {
+.form-contacto .controls {
   width: 100%;
   background: #131929;
   padding: 10px;
@@ -326,17 +350,17 @@ main .text-games span {
   font-size: 16px;
   color: white;
 }
-.form-register p {
+.form-contacto p {
   height: 40px;
   text-align: center;
   font-size: 18px;
   line-height: 40px;
 }
-.form-register a {
+.form-contacto a {
   color: white;
   text-decoration: none;
 }
-.form-register .buttons {
+.form-contacto .buttons {
   width: 100%;
   background: #1f53c5;
   border: none;
@@ -363,24 +387,54 @@ main .text-games span {
   list-style: none;
   display: inline;
 }
-.logos-contacto .copy {
+
+.copy {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
+  background: linear-gradient(45deg, #07c5ff, #097fb1);
 }
-.logos-contacto .copy a {
+.copy a {
   padding-right: 10px;
 }
-.logos-contacto .copy a img {
+.copy a img {
   width: 30px;
 }
-.logos-contacto .copy p {
+.copy p {
   color: #fff;
 }
-.logos-contacto .copy p span {
+.copy p span {
   color: #097fb1;
   font-weight: 700;
 }
 
+@media (min-width: 900px) {
+  #contacto {
+    display: flex;
+    width: 100vw;
+    padding-left: 50px;
+  }
+  #contacto .form-container {
+    width: 70%;
+  }
+  #contacto .form-register {
+    width: 80%;
+  }
+  #contacto .logos-contacto {
+    width: 20%;
+  }
+  #contacto .logos-contacto ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contacto .logos-contacto ul li {
+    padding-top: 30px;
+  }
+  #contacto .logos-contacto h5 {
+    width: 100%;
+    font-size: 20px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
