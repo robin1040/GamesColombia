@@ -1,0 +1,86 @@
+@import "_variables.scss";
+
+#contacto{
+    background: linear-gradient(45deg,$color-three,$color-second);
+    padding-top: 50px;
+}
+
+.form-register {
+    width: 90%;
+    background: $color-primary;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .controls {
+        width: 100%;
+        background: $color-primary;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid $color-second;
+        font-family: 'calibri';
+        font-size: 16px;
+        color: white;
+      }
+
+    p{
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .buttons{
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+  }
+
+  .logos-contacto{
+    margin-top: 50px;
+    h5{
+        text-align: center;
+        font-size: 24px;
+        color: $color-white;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        li{
+            list-style: none;
+            display: inline;
+        }
+    }
+    .copy{
+        display: flex;
+        justify-content: center;
+        a{
+            padding-right: 10px;
+            img{
+                width: 30px;
+            }
+        }
+        p{
+            color: $color-white;
+            span{
+                color: $color-second;
+                font-weight: 700;
+            }
+        };
+    }
+  }
